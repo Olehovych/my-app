@@ -1,0 +1,32 @@
+@import "../fons/Fons.scss";
+
+header {
+  background-color: #141c24;
+  max-width: 1920px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    color: rgba(87, 214, 255, 1);
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      &:hover {
+        border-bottom: 2px solid #00c5ff;
+      }
+    }
+  }
+}
