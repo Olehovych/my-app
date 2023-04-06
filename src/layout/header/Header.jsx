@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./Header.scss";
-
+import logo from "../../img/logo.png";
 export default function Header() {
   return (
     <header>
       <div className="logo">
         <a href="#">
-          {/* <img src="./logo.png" alt="logo" /> */}
+          <img src={logo} alt="logo" />
           WARPLAY
         </a>
       </div>
