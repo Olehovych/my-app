@@ -1,9 +1,12 @@
 import React from "react";
 import "./MainPage.scss";
-
+import "./Slider";
 //Photos//
-import bg from "../../img/bg.png";
+import bg_first from "../../img/bg.png";
+import bg_second from "../../img/bg_second.png";
+import bg_three from "../../img/bg_three.png";
 import work__scetion from "../../img/work__scetion.png";
+import browser from "../../img/device__section.png";
 //Icons//
 import Arcad from "../../img/icon/Arcad.svg";
 import cloud from "../../img/icon/cloud.svg";
@@ -13,10 +16,16 @@ export default function MainPage() {
   return (
     <main>
       <div className="main__section">
-        <img src={bg} alt="bg_photo" />
-        <p>Cloud gaming service</p>
-        <h1>Turn your device into a gaming device </h1>
-        <button>UPGRADE</button>
+        <div className="slider">
+          <img src={bg_first} alt="bg_photo" />
+          <img src={bg_second} alt="bg_photo" />
+          <img src={bg_three} alt="bg_photo" />
+        </div>
+        <div className="main__content">
+          <p>Cloud gaming service</p>
+          <h1>Turn your device into a gaming device </h1>
+          <button>UPGRADE</button>
+        </div>
       </div>
       <div className="work__section">
         <div className="left__block">
@@ -35,7 +44,7 @@ export default function MainPage() {
             and above, 1 Gb RAM and internet access <br /> 15 mbps and higher On
             all operating systems <br /> Windows 7, 8, 10 MacOS and Linux.
           </p>
-          <a href="/">Download</a>
+          <a href="#">Download</a>
         </div>
       </div>
       <div className="game__section">
@@ -69,14 +78,52 @@ export default function MainPage() {
         <div className="tariffs__section_cards">
           <div className="card">
             <div className="description">
-              <h4>Hourly pay</h4>
+              <h4>Hourly pay </h4>
               <p>
-                Available: <br /> Game Catalog <br /> Virtual PC <br />{" "}
+                Available: <br /> Game Catalog <br /> Virtual PC <br />
                 Unlimited Game Session
               </p>
               <button>Select</button>
             </div>
           </div>
+          <div className="card">
+            <div className="description">
+              <h4>
+                Subscription <br /> Maximum
+              </h4>
+              <p>
+                Available: <br /> Game Catalog <br /> Virtual PC <br /> Game
+                session 10 hours/day
+              </p>
+              <button>Select</button>
+            </div>
+          </div>
+          <div className="card">
+            <div className="description">
+              <h4>
+                Subscription <br /> Minimum
+              </h4>
+              <p>
+                Available: <br /> Game Catalog <br /> Game session 4 hours/day
+              </p>
+              <button>Select</button>
+            </div>
+          </div>
+        </div>
+        <div className="line"></div>
+      </div>
+      <div className="device__section">
+        <div className="device__section_left">
+          <span>You can play in your browser</span>
+          <h5>Run on any device</h5>
+          <p>
+            Our module is available on all popular operating systems <br /> and
+            works on all computers.
+          </p>
+          <a href="#">Open in a browser</a>
+        </div>
+        <div className="device__section_right">
+          <img src={browser} alt="browser" />
         </div>
       </div>
     </main>
