@@ -1,22 +1,24 @@
 import React from "react";
 import styles from "./Header.scss";
 import logo from "../../img/logo.png";
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header>
       <div className="logo">
-        <a href="#">
+        <Link to="/">
           <img src={logo} alt="logo" />
           WARPLAY
-        </a>
+        </Link>
       </div>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Servers</a>
-        <a href="#">Download</a>
-        <a href="#">Tech support</a>
-        <a href="#">Prices</a>
-        <a href="#">Contact</a>
+        <Link to="/">Home</Link>
+        <Link to="/download">Download</Link>
+        <Link to="/prices">Prices</Link>
+        <Link to="/support">Tech support</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/signUp">Sign up</Link>
       </nav>
     </header>
   );

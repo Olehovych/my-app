@@ -1,6 +1,5 @@
-import React from "react";
 import "./MainPage.scss";
-import "./Slider";
+
 //Photos//
 import bg_first from "../../img/bg.png";
 import bg_second from "../../img/bg_second.png";
@@ -12,14 +11,17 @@ import Arcad from "../../img/icon/Arcad.svg";
 import cloud from "../../img/icon/cloud.svg";
 import mail from "../../img/icon/mail.svg";
 import tool from "../../img/icon/tool.svg";
+// Slider
+
+//////
 export default function MainPage() {
   return (
     <main>
       <div className="main__section">
         <div className="slider">
-          <img src={bg_first} alt="bg_photo" />
+          {/* <img src={bg_first} alt="bg_photo" /> */}
           <img src={bg_second} alt="bg_photo" />
-          <img src={bg_three} alt="bg_photo" />
+          {/* <img src={bg_three} alt="bg_photo" /> */}
         </div>
         <div className="main__content">
           <p>Cloud gaming service</p>

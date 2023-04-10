@@ -15,7 +15,6 @@ export default function Footer() {
         <a href="#">Privacy Policy</a>
         <a href="#">Cookie Files</a>
       </div>
-      <div className="media"></div>
     </footer>
   );
 }
